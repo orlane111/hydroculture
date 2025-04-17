@@ -1,83 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriel Hydroculture</title>
-    <link rel="stylesheet" href="/css/tuto.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutoriel Hydroculture</title>
+  <link rel="stylesheet" href="/css/tuto.css">
 </head>
 <body>
-    <!-- En-tête -->
-    <header class="header">
-        <h1>Apprendre l'Hydroculture</h1>
-      <center> <p>Découvrez les bases de l'hydroponie avec des vidéos explicatives</p></center> 
-        <nav>
-            <a href="indexAgri.html">ACCEUIL</a>
-            <a href="catalogueAgri.html">CATALOGUE</a>
-            <a href="#">PANIER</a>
-            <a href="#">CONTACT</a>
-            <a href="#">PROFIL</a>
-        </nav>
-    </header>
 
-    <!-- Section principale -->
-    <main class="main-content">
-        <!-- Introduction -->
-        <section class="section" id="introduction">
-            <h2>
-                <img src="/images/image1.jpg" alt="Introduction à l'hydroculture" class="responsive-img"width="650" height="500">
-                <center>Introduction à l'Hydroculture </center>
-            </h2>
-          <center> <p>L'hydroculture est une méthode innovante de culture des plantes sans sol, utilisant une solution nutritive.</p>
-            <a href="https://www.youtube.com/watch?v=tvPit0mT1LA" target="_blank">Regarder la vidéo introductive</a></center>
-        </section>
+  <!-- En-tête -->
+  <header class="header">
+    <h1>Apprendre l'Hydroculture</h1>
+    <div class="bar">
+    <p class="centered">Découvrez les bases de l'hydroponie avec des vidéos explicatives</p>
+    <nav>
+        <ul class="nav-list">  
+            <li><a href="indexAgri.html">ACCEUIL</a></li>
+            <li><a href="catalogueAgri.html">CATALOGUE</a></li>
+            <li><a href="commandeAgri.html">COMMANDE&nbsp;</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+            <li><a href="/profil.html">PROFIL&nbsp;</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
 
-        <!-- Fabrication du système -->
-        <section class="section" id="fabrication">
-            <h2>
-                <img src="/images/image2.jpg" alt="Fabrication du système hydroponique" class="responsive-img" width="650" height="500">
-                <center>Fabrication du Système Hydroponique</center>
-            </h2>
-           <center>
-                <p>1.Choisissez un système adapté (NFT, culture en eau profonde, etc.).</p>
-                <p>2.Installez les réservoirs et les substrats.</p>
-                <ul>3.réparez la solution nutritive.</ul>
-                <p>4.Assemblez les tuyaux et pompes pour l'irrigation.</p>
-            </center>
-           <center><a href="https://www.youtube.com/watch?v=60Blb7i-tcQ" target="_blank">Regarder le tutoriel pour fabriquer un système NFT</a></center>
-        </section>
+  <!-- Contenu principal -->
+  <main class="main-content">
 
-        <!-- Gestion et entretien -->
-        <section class="section" id="maintenance">
-            <h2>
-                <img src="/images/image3.jpg" alt="Gestion et entretien du système hydroponique" class="responsive-img" width="650" height="500">
-                <center>Gestion et Entretien</center>
-            </h2>
-           <center> <ul>
-                <p>Surveillez le pH de la solution (idéal entre 5.5 et 6.5).</li>
-                <p>Ajoutez régulièrement des nutriments selon les besoins des plantes.</p>
-                <p>Assurez un éclairage adéquat (LED ou lumière naturelle).</p>
-                <p>Nettoyez les réservoirs pour éviter les algues ou maladies.</p>
-            </ul>
-            <a href="https://www.youtube.com/watch?v=JKCKvMEyqXQ" target="_blank">Regarder la vidéo sur la gestion et l'entretien</a></center>
-        </section>
+    <section class="section" id="introduction">
+        <h2>
+            Introduction à l'Hydroculture
+        </h2>
 
-        <!-- Nettoyage du système -->
-        <section class="section" id="cleaning">
-            <h2>
-                <img src="/images/image4.jpg" alt="Nettoyage du système hydroponique" class="responsive-img"width="650" height="500">
-                <center>Nettoyage du Système Hydroponique</center>
-            </h2>
-           <center> <p>Le nettoyage régulier est essentiel pour éviter les maladies et prolonger la durée de vie de votre système.</p>
-            <a href="https://www.youtube.com/watch?v=Fl1ATU6ZmA0" target="_blank">Regarder le tutoriel sur le nettoyage du système Dutch Bucket</a></center>
-        </section>
+        <div class="video-contenu">
+            <h3>Qu'est-ce que l'hydroculture ?</h3>
+            <p>L'hydroculture est une méthode de culture des plantes sans sol, utilisant une solution nutritive pour nourrir les racines.</p>
+            <div class="description centered">
+                <img src="/images/image1.jpg" alt="Introduction à l'hydroculture" class="responsive-img">
+                <p>L'hydroculture est une méthode innovante de culture des plantes sans sol, utilisant une solution nutritive.</p>
+            </div>
+            <div class="video-section">
+                <h3>Vidéo d'introduction</h3>
+                <a href="https://www.youtube.com/watch?v=tvPit0mT1LA" target="_blank"><button class="regarder_video">Regarder la vidéo</button></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="fabrication">
+        <h2>
+            Fabrication du Système Hydroponique
+        </h2>
+            <div class="video-contenu">
+                <div class="description centered">
+                    <img src="/images/image2.jpg" alt="Fabrication du système hydroponique" class="responsive-img">
+                    <p>1. Choisissez un système adapté (NFT, culture en eau profonde, etc.).</p>
+                    <p>2. Installez les réservoirs et les substrats.</p>
+                    <p>3. Préparez la solution nutritive.</p>
+                    <p>4. Assemblez les tuyaux et pompes pour l'irrigation.</p>
+                </div>
+                <div class="video-section">
+                    <h3>Vidéo de fabrication du système NFT</h3>
+                    <a href="https://www.youtube.com/watch?v=60Blb7i-tcQ" target="_blank"><button class="regarder_video">Regarder la vidéo</button></a>
+                </div>
+            </div>
+    </section>
+    
+    <section class="section" id="maintenance">
+        <h2>
+            Gestion et Entretien
+        </h2>
+        <div class="video-contenu">
 
-    </main>
+            <div class="description centered">
+                <img src="/images/image3.jpg" alt="Gestion et entretien du système hydroponique" class="responsive-img">
+                <p>1. Surveillez le pH et la conductivité de la solution nutritive.</p>
+                <p>2. Changez régulièrement la solution nutritive.</p>
+                <p>3. Nettoyez les filtres et les tuyaux pour éviter les obstructions.</p>
+            </div>
 
-    <!-- Pied de page -->
-    <footer class="footer">
-       <marquee direction="left"><p>&copy; 2025 Tutoriel Hydroculture</p></marquee>
-    </footer>
+            <div class="video-section">
+                <h3>Vidéo de gestion du système</h3>
+                <a href="https://www.youtube.com/watch?v=6b9g4k8Z5e0" target="_blank"><button class="regarder_video">Regarder la vidéo</button></a>
+            </div>
+        </div>    
+    </section>
+    
+    <section class="section" id="cleaning">
+        <h2>
+            Nettoyage du Système Hydroponique
+        </h2>
+            <div class="video-contenu">
+                <div class="description centered">
+                    <img src="/images/image4.jpg" alt="Nettoyage du système hydroponique" class="responsive-img">
+                    <p>Le nettoyage régulier est essentiel pour éviter les maladies et prolonger la durée de vie de votre système.</p>
+                </div>
+                <div class="video-section">
+                    <h3>Vidéo de nettoyage du système Dutch Bucket</h3>
+                    <a href="https://www.youtube.com/watch?v=Fl1ATU6ZmA0" target="_blank"><button class="regarder_video">Regarder la vidéo</button></a>
+                </div>
+            </div>
+    </section>
+    
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <marquee direction="left"><p>&copy; 2025 GROUPE 2</p></marquee>
+  </footer>
 
 </body>
 </html>

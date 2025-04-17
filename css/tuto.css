@@ -1,144 +1,210 @@
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* tuto.css amélioré */
+
+/* Reset de base */
+* {
     margin: 0;
     padding: 0;
-}
-
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    width: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    width: 100%;
-}
-
-header h1 {
-    background-color:green;
+    box-sizing: border-box;
+  }
+  
+  /* Corps de la page */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 50px;
+  }
+  
+  /* En-tête */
+  .header .bar {
+    background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 20px;
-    margin: 0;
-}
-
- header p{
-
-    background-color: #A0D6B4;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-
-}
-
-
-
-nav {
-    background-color: #b3b3b3;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-nav {
-    background-color: #b3b3b3;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    text-align: center;
-    background-color: green;
-    color: white;
-    padding: 10px;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-/* Sections */
-.section {
-    margin-bottom: 40px;
-}
-
-.section h2 {
-    font-size: 24px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
-}
-
-/* Images adaptatives */
-.responsive-img {
-    max-width: 100%; /* Largeur maximale à 100% du conteneur */
-    height: auto; /* Hauteur automatique pour préserver les proportions */
-    display: block; /* Pour centrer l'image */
-    margin: 10px auto; /* Centrage horizontal avec un espace autour */
-}
-
-/* Liens */
-a {
-    color: #007BFF;
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  .header .centered {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 50px;
+  }
+  
+  nav ul li a {
+    color: white;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Listes */
-ol, ul {
-    margin-left: 20px;
-}
-
-ol li, ul li {
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #c8e6c9;
+  }
+  
+  /* Contenu principal */
+  .main-content {
+    padding: 20px;
+  }
+  
+  /* Section */
+  .section {
+    margin-bottom: 50px;
+  }
+  
+  .section h2 {
+    text-align: center;
+    font-size: 2em;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Bloc regroupant image, description et bouton vidéo */
+.video-contenu {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Image réduite et centrée */
+  .video-contenu img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Titres dans le bloc */
+  .video-contenu h3 {
+    font-size: 1.4em;
+    color: #388E3C;
     margin-bottom: 10px;
-}
+  }
+  
+  /* Texte dans le bloc */
+  .video-contenu p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Bouton dans le bloc */
+  .video-contenu .regarder_video {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .video-contenu .regarder_video:hover {
+    background-color: #388E3C;
+  }
+  
+  .description p,
+  .video-section p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Image responsive + réduite */
+  .responsive-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  /* Bouton */
+  .regarder_video {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .regarder_video:hover {
+    background-color: #388E3C;
+  }
+  
+  /* Titre de sous-section */
+  .video-section h3 {
+    font-size: 1.3em;
+    color: #388E3C;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 5px solid #388E3C;
+  }
+  
+  footer marquee {
+    font-size: 1.2em;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .header h1 {
+      font-size: 2em;
+    }
+  
+    .header .centered {
+      font-size: 1em;
+    }
+  
+    .section h2 {
+      font-size: 1.5em;
+    }
+  
+    .description,
+    .video-section {
+      width: 100%;
+    }
+  
+    .regarder_video {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+  }
+  
