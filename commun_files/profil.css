@@ -1,0 +1,211 @@
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #66BB6A;
+    --accent-color: #27ae60;
+    --light-green: #E8F5E9;
+    --dark-color: #212121;
+    --light-color: #f8f9fa;
+    --gray-color: #757575;
+    --success-color: #43A047;
+    --border-color: #e0e0e0;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+a[href="modif_profil.php"],
+a[href="logout.php"] {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+/* Titre */
+h1 {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 24px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: 1px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 8px rgba(46,204,113,0.08);
+}
+
+/* Informations du profil */
+.profile-info {
+    padding: 0 20px 20px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.info-label {
+    width: 150px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.info-value {
+    flex: 1;
+}
+
+/* Boutons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--light-green);
+}
+
+.btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(46,204,113,0.08);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 100%);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--light-green);
+}
+
+/* Adaptations pour votre HTML existant */
+body > h1 {
+    max-width: 800px;
+    margin: 0 auto 0;
+    border-radius: 10px 10px 0 0;
+}
+
+body > p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    background-color: white;
+    display: flex;
+}
+
+body > p:last-of-type {
+    margin-bottom: 0;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+}
+
+body > p::before {
+    content: attr(data-label);
+    width: 150px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+body > p:nth-of-type(1)::before { content: "Nom:"; }
+body > p:nth-of-type(2)::before { content: "Prénom:"; }
+body > p:nth-of-type(3)::before { content: "Email:"; }
+body > p:nth-of-type(4)::before { content: "Contact:"; }
+body > p:nth-of-type(5)::before { content: "Nom d'utilisateur:"; }
+body > p:nth-of-type(6)::before { content: "Rôle:"; }
+
+body > p:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Conteneur pour les liens */
+body > a:first-of-type,
+body > a:last-of-type {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 20px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(46,204,113,0.08);
+}
+
+/* Style pour les liens */
+body > a:first-of-type {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+}
+
+body > a:first-of-type:hover {
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 100%);
+}
+
+body > a:last-of-type {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+body > a:last-of-type:hover {
+    background-color: var(--light-green);
+}
+
+/* Wrapper pour les liens */
+body::after {
+    content: "";
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--light-green);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+body > a {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
